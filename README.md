@@ -1,9 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : MARXIN LIJO M
 
+REG NO: 212223240085 
 
+Date of experiment :12-11-2026
 
 
 
@@ -79,24 +79,133 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 8 bit ALP 
 
+```asm
+ORG 100H
 
+MOV AX, 0005H
+MOV BX, 0003H
+ADD AX, BX
+MOV [1200H], AX
+HLT
+```
 
 ## Output  
- 
+ <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/dfc1c1f1-e149-4411-ba2f-44dc72e5b714" />
+
 ## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
+ ```asm
+ORG 100H
+
+MOV AX, 0009H
+MOV BX, 0004H
+SUB AX, BX
+MOV [1200H], AX
+HLT
+```
+
+## Output 
+
+<img width="1917" height="1143" alt="image" src="https://github.com/user-attachments/assets/a31f5a6c-74fd-4fb8-ac88-0e4086415996" />
+
 ## Multiplication alp 
+```asm
+ORG 100H
+
+MOV AX, 0005H
+MOV BX, 0003H
+MUL BX
+MOV [1200H], AX
+HLT
+```
  ## Output  
 
+<img width="1917" height="1142" alt="image" src="https://github.com/user-attachments/assets/3148ae73-54ec-401b-89db-3125d8bbbbda" />
 
 ## Division alp 
+```asm
+ORG 100H
 
+MOV AX, 0014H
+MOV BX, 0004H
+MOV DX, 0000H
+DIV BX
+MOV [1200H], AX
+HLT
+```
 ## Output  
+
+<img width="1917" height="1116" alt="image" src="https://github.com/user-attachments/assets/8ffe29f2-96b5-4062-ab8e-5d1a01586919" />
+
+## AND Operation of 8 bit numbers ALP
+
+```asm
+ORG 100H
+
+MOV AX, 000CH
+MOV BX, 000AH
+AND AX, BX
+MOV [1200H], AX
+HLT
+```
+
+## Output
+
+<img width="1917" height="1137" alt="image" src="https://github.com/user-attachments/assets/bab15203-f6ed-4044-8ad0-df77ef51d0ab" />
+
+
+## OR Operation of 8 bit numbers ALP
+
+```asm
+ORG 100H
+
+MOV AX, 000CH
+MOV BX, 000AH
+OR AX, BX
+MOV [1200H], AX
+HLT
+```
+
+## Output
+
+<img width="1915" height="1137" alt="image" src="https://github.com/user-attachments/assets/cdc433b3-e9e1-46d5-9b91-9208824671f8" />
+
+
+
+## NOT Operation of 8 bit numbers ALP
+
+```asm
+ORG 100H
+
+MOV AX, 000FH
+NOT AX
+MOV [1200H], AX
+HLT
+```
+
+## Output
+
+<img width="1917" height="1137" alt="image" src="https://github.com/user-attachments/assets/fe7eec77-c99c-4841-9c42-ed669a096d39" />
+
+
+
+## XOR Operation of 8 bit numbers ALP
+
+```asm
+ORG 100H
+
+MOV AX, 000CH
+MOV BX, 000AH
+XOR AX, BX
+MOV [1200H], AX
+HLT
+```
+
+## Output
+<img width="1915" height="1118" alt="image" src="https://github.com/user-attachments/assets/af925cbb-db0d-411d-9e53-fab77663c42b" />
 
 
 ## Result :
- 
+ The execution of ALP on fundamental arithmetic and logical operations is completed successfully.
 
 
 
